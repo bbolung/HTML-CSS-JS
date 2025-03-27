@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*reset*/
+        * {margin: 0; box-sizing: border-box;}
+        ul, ol, li{list-style: none; margin: 0; padding: 0;}
+        a{text-decoration: none;}
+
+        /*금일 음원 차트*/
+        #today {
+            width: 1000px; height: 400px; margin: 0 auto; border: 2px solid gray;
+        }
+
+        #today > h3 {
+            font-size: 23px; color: #000; text-align: left; 
+            line-height: 50px; margin-left: 15px;
+        }
+
+        #today > p {
+            font-size: 15px; color: darkgray; text-align: left; 
+            line-height: 10px; margin-left: 20px;
+        }
+
+        #today > .topmusic {
+            width: 200px; height: 250px; float: left; margin: 10px;
+            padding: 5px; border: 1px solid #ddd;
+        }
+
+        #today > .topmusic:hover {box-shadow: 4px 4px 4px; color: #eee;}
+
+        #today > .topmusic > a > img {width: 100%; height: 180px;}
+
+        #today > .topmusic > h4 {font-size: 13px; color: #000; text-align: center; font-weight: bold;}
+
+        #today > .topmusic > span {
+            font-size: 11px; color: dimgray; font-weight: bold; 
+            display: flex; align-items: center; justify-content: center; line-height: 15px;
+        }
+
+        /*2월 음원 차트*/
+        #lastmonth {
+            width: 1000px; height: 400px; margin: 0 auto; border: 2px solid gray;
+        }
+
+        #lastmonth > h3 {
+            font-size: 23px; color: #000; text-align: left; 
+            line-height: 50px; margin-left: 15px;
+        }
+
+        #lastmonth > p {
+            font-size: 15px; color: darkgray; text-align: left; 
+            line-height: 10px; margin-left: 20px;
+        }
+
+        #lastmonth > .lastmusic {
+            width: 200px; height: 300px; float: left; margin: 20px 25px;
+            padding: 10px; border: 1px solid #ddd;
+        }
+
+        #lastmonth > .lastmusic:hover {box-shadow: 4px 4px 4px; color: #eee;}
+
+        #lastmonth > .lastmusic > a > img {width: 100%; height: 180px;}
+
+        #lastmonth > .lastmusic > h4 {font-size: 13px; color: #000; text-align: center; font-weight: bold;}
+
+        #lastmonth > .lastmusic > span {
+            font-size: 11px; color: dimgray; font-weight: bold;
+            display: flex; align-items: center; justify-content: center; line-height: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--금일 음원 차트-->
+    <div id="today">
+        <h3>Today's Music Top 5</h3>
+        <p>2025년 3월 27일 16시 멜론차트 기준입니다.</p>
+
+        <div class="topmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/117/22/169/11722169_20250224160403_500.jpg?df31ad712fff6724758b97cff3094bc2/melon/resize/282/quality/80/optimize"
+                             alt="Too Bad"></a>
+            <h4>Too Bad<br>(feat. Anderson .Paak)</h4>
+            <span>G-DRAGON</span>
+        </div>
+
+        <div class="topmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/116/85/729/11685729_20250106160640_500.jpg?df52a12b8a47356c9d11a91629cd9d7b/melon/resize/282/quality/80/optimize"
+                             alt="모르시나요"></a>
+            <h4>모르시나요<br>(PROD.로코베리)</h4>
+            <span>조째즈</span>
+        </div>
+        
+        <div class="topmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/116/47/670/11647670_20241121150855_500.jpg?ca3667d3396803e3f6b227e77440b735/melon/resize/282/quality/80/optimize" 
+                            alt="HOME SWEET HOME"></a>
+            <h4>HOME SWEET HOME<br>(feat. 태양, 대성)</h4>
+            <span>G-DRAGON</span>
+        </div>
+        
+        <div class="topmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/117/30/946/11730946_20250307173452_500.jpg?4bb4ad8df2c3d590e5b8445c1e81c9a3/melon/resize/282/quality/80/optimize" 
+                            alt="like JENNIE"></a>
+            <h4>like JENNIE</h4>
+            <span>제니 (JENNIE)</span>
+        </div>
+        
+        <div class="topmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/116/89/783/11689783_20250203110601_500.jpg?YUV444/melon/resize/282" 
+                            alt="REBEL HEART"></a>
+            <h4>REBEL HEART</h4>
+            <span>IVE (아이브)</span>
+        </div>
+    </div>
+
+    <!--2월 음원 차트-->
+    <div id="lastmonth">
+        <h3>Last month's Music Top 5 </h3>
+        <p>2025년 2월 멜론차트 기준입니다.</p>
+
+        <div class="lastmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/116/89/783/11689783_20250203110601_500.jpg?YUV444/melon/resize/282"
+                            alt="REBEL HEART"></a>
+            <h4>REBEL HEART</h4>
+            <span>IVE (아이브)</span>
+        </div>
+
+        <div class="lastmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/116/47/670/11647670_20241121150855_500.jpg?ca3667d3396803e3f6b227e77440b735/melon/resize/282/quality/80/optimize" 
+                            alt="HOME SWEET HOME"></a>
+            <h4>HOME SWEET HOME<br>(feat. 태양, 대성)</h4>
+            <span>G-DRAGON</span>
+        </div>
+
+        <div class="lastmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/116/20/541/11620541_20241018183253_500.jpg?e1d6c3791b15220a80c7dbddc53dfc5c/melon/resize/282/quality/80/optimize" 
+                            alt="나는 반딧불"></a>
+            <h4>나는 반딧불</h4>
+            <span>황가람</span>
+        </div>
+
+        <div class="lastmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/116/20/540/11620540_20241018183208_500.jpg?e88933ef18e678ee69ac497989368c77/melon/resize/282/quality/80/optimize"
+                            alt="Whiplash"></a>
+            <h4>Whiplash</h4>
+            <span>aespa</span>
+        </div>
+
+        <div class="lastmusic">
+            <a href="#"><img src="https://cdnimg.melon.co.kr/cm2/album/images/116/19/809/11619809_20241018103507_500.jpg?6bf26e2f623ff5208bebf9c51f9e2fcf/melon/resize/282/quality/80/optimize"
+                            alt="APT."></a>
+            <h4>APT.</h4>
+            <span>로제 (ROSÉ), Bruno Mars</span>
+        </div>
+    </div>
+</body>
+</html>
