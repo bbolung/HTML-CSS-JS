@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--get 사용하면 주소창에 http://127.0.0.1:5500/2%EC%9D%BC%EC%B0%A8/test.jsp?id=id&pw=pw-->
+    <!--이처럼 입력한 id와 pw 값 외부 노출O-->
+    <!-- post : http://127.0.0.1:5500/2%EC%9D%BC%EC%B0%A8/test.jsp 외부 노출X-->
+    <form action="test.jsp" method="post">
+
+        아이디 : <input type="text" name="id"><br>
+        비밀번호 : <input type="text" name="pw"><br>        
+        
+        <input type="submit" value="로그인">
+        <input type="reset" value="취소">    
+    </form>
+</body>
+</html>

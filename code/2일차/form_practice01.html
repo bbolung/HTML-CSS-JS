@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원 가입</h1>
+    <form action="test.jsp" method="post">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <lable for="uer-id">아이디</lable>
+            <input type="text" id="user-id" name="id">
+            <br>
+            <label for="pw1">비밀번호</label>
+            <input type="password" id="pw1" name="pw1">
+            <br>
+            <label for="pw2">비밀번호 확인</label>
+            <input type="password" id="pw2" name="pw2">
+        </fieldset>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <label for="uer-name">이름</label>
+            <input type="text" id="user-name" name="user-name">
+            <br>
+            <lable for="mail">메일 주소</lable>
+            <input type="email" id="mail" name="email">
+            <br>
+            <lable for="phone">연락처</lable>
+            <input type="tel" id="phone" name="phone">
+            <br>
+            <lable for="url">블로그/홈페이지</lable>
+            <input type="url" id="url" name="url">
+        </fieldset>
+        <input type="submit" value="가입하기">
+    </form>
+</body>
+</html>

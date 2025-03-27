@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <figure>
+        <figcaption>
+            개인 연락처
+        </figcaption>
+    </figure>
+    <table border="1">
+        <colgroup>  <!--각각의 열에 너비 지정-->
+            <col style="width: 100px;">
+            <col style="width: 200px;">
+            <col style="width: 100px;">
+            <col style="width: 200px;">
+        </colgroup>
+        <tr> 
+            <td>이름</td>
+            <td></td>
+            <td>연락처</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">주소</td>   <!--현재 행 포함 2개 행 합침-->
+            <td colspan="3"></td>       <!--현재 열 포함 3개 열 합침-->
+        </tr>
+
+        <tr> 
+            <td>자기소개</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>

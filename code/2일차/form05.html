@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+        }
+        .subm{
+            display: block;     
+            background-color: #fff;
+            border: 1px solid #dedede;
+            cursor: pointer;
+            margin: 10px 5px;       
+            padding: 5px 10px 6px 7px;
+        }
+
+        .subm img{
+            border: 0;
+            padding: 0;
+            width: 16px;
+            height: 16px;
+        }
+
+        .subm:hover{
+            background-color: #e6efce;
+            border: 1px solid #c6d880;
+            color: #529152;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <button class="subm" type="submit">
+            <img src="../img/tick.jpg" alt="숲" width="15">전송하기
+        </button>
+        <br>
+        <button type="reset">
+            취소
+        </button>
+        <img src="../img/tick.jpg" alt="숲" width="15">전송하기
+    </form>
+</body>
+</html>
+<!--margin: 여백크기(상하, 좌우)-->
+<!--padding : 상, 우, 하, 좌 여백 크기-->
+<!--border : 테두리 1px(두께) solid(굵게) #dedede(색상)-->
+<!--cursor : pointer; (위에 마우스 커서 올리면 포인터로 바뀜)-->
+<!--.subm img{] : subm 밑에 있는 img (subm안에 있는 img X)-->
+<!--.subm:hover{} : subm 위에 커서 올릴 때 스타일 변화화-->
