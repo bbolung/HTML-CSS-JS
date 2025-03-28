@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+            font-family: "맑은 고딕";
+            background-color: lightgoldenrodyellow;
+        }
+        ul, ol, li {list-style: none; margin: 0; padding: 0;}
+
+        header {width: 1100px; height: 150px; margin: 0 auto;}
+        #logo {width: 160px; height: 120px; float: left; margin: 15px 30px;}
+        #logo > img {width: 260px; height: 120px;}
+        
+        nav {width: 650px; height:50px; float: right; margin: 90px 120px 0 0; border: 1px dashed lightgoldenrodyellow; border-radius: 3px;}
+        nav > ul {font-family: "Arial"; font-weight: bold;}
+        nav > ul  > li {float: left; padding: 15px 20px;}
+        nav > ul > li > a {text-decoration: none; color: goldenrod;}
+        nav > ul > li > a:hover {color: #333;}
+
+        #slider {width: 1100px; height: 400px; margin: 0 auto;}
+        #slider > img {width: 1000px; height: 400px; display: block; margin: 0 auto;}
+
+        section {width: 1000px; height: 350px; margin: 0 auto; border: 1px solid rgb(250, 218, 137);}
+        article {width: 120px; height: 130px;  float: left; margin: 25px 40px 15px;}
+        
+        article .categories {width: 120px; height: 130px; text-align: center; border: 1px dashed rgb(250, 218, 137); border-radius: 3px;}
+        article .categories:hover {box-shadow: 4px 4px 4px; color: #eee;}
+
+        article .categories img {width:100px; height: 90px; margin-top: 5px; border-radius: 50%; object-fit: cover;}
+        article .categories h4 {font-size: 12px; text-align: center; margin-top: 10px; color: #333;}
+        
+        footer {width: 1000px; height: 100px; margin: 0 auto; background-color: lightgoldenrodyellow;}
+        footer > img {width: 100px; height: 50px; float: left; margin: 20px 30px;}
+        footer .info > ul > li {float: left; padding: 0 5px;  margin-top: 25px; color: goldenrod; font-size: 10px;}
+        footer .info > ul> li > a {text-decoration: none; color: goldenrod; font-size: 10px;}
+
+        footer .contact {float: left;  font-size: 10px; color: goldenrod; padding: 5px 5px;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="../img/catHomepage/logo1.png"></div>
+        <nav>
+            <ul>
+                <li><a href="#">BEST</a></li>
+                <li><a href="#">NEW</a></li>
+                <li><a href="#">BRAND</a></li>
+                <li><a href="#">SAMPLE</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">NOTICE</a></li>
+                <li><a href="#">Q&A</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="slider"><img src="../img/catHomepage/2.jpg" alt="중앙사진"></div>
+
+    <section>
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/sale.png" alt="sale"></a>
+                <h4>특가 상품</h4>
+            </div>
+        </article>
+        
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/사료.jpg" alt="건식사료"></a>
+                <h4>건식 사료</h4>
+            </div>
+        </article>
+        
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/캔.jpg" alt="캔/파우치"></a>
+                <h4>캔/파우치</h4>
+            </div>
+        </article>
+        
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/간식.jpg" alt="간식"></a>
+                <h4>간식</h4>
+            </div>
+        </article>
+        
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/식기.jpg" alt="식기"></a>
+                <h4>급식기/급수기</h4>
+            </div>
+        </article>
+        
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/스크래쳐.jpg" alt="스크래쳐"></a>
+                <h4>스크래쳐</h4>
+            </div>
+        </article>
+
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/장난감.jpg" alt="장난감"></a>
+                <h4>장난감</h4>
+            </div>
+        </article>
+        
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/모래.png" alt="모래"></a>
+                <h4>모래</h4>
+            </div>
+        </article>
+        
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/화장실.jpg" alt="화장실"></a>
+                <h4>화장실</h4>
+            </div>
+        </article>
+        
+        <article>
+            <div class="categories">
+                <a href="#"><img src="../img/catHomepage/용품.jpg" alt="용품"></a>
+                <h4>용품</h4>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <img src="../img/catHomepage/logo1.png" alt="logo">
+        <div class="info">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li>|</li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li>|</li>
+                <li><a href="#">이용약관</a></li>
+                <li>|</li>
+                <li><a href="#">제휴 및 입점문의</a></li>
+                <li>|</li>
+                <li><a href="#">사업자정보 </a></li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="contact">
+            <span>고객센터</span>
+            <span>02-000-0000</span>
+        </div>
+    </footer>
+</body>
+</html>
