@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0 auto; padding: 0; box-sizing: border-box;}
+        ul, ol, li {list-style: none; margin: 0 auto; padding: 0;}
+
+        header {width: 100%; height: 250px; background-color: tomato;}
+
+        #wish {width: 250px; height: 50px; float: left; margin: 10px 0 0 20px; background-color: gold;}
+        #wish > ul > li {font-size: 12px; float: left; margin: 10px 7px;}
+        #wish > ul > li > a {text-decoration: none; color: #666;}
+
+        #login {width: 400px; height: 50px; float: right; margin: 10px 50px 0 0; background-color: gold;}
+        #login > ul > li {font-size: 12px; float: left; margin: 10px 7px;}
+        #login > ul > li > a {text-decoration: none; color: #666;}
+
+        #logo {width: 220px; height: 180px; margin: 0 auto; background-color: pink;}
+        #logo > img {width: 220px; height: 60px; margin: 90px 0 0;}
+
+        #icons {width: 200px; height: 50px; float: right; margin: 15px 50px 0 0; background-color: gold;}
+        #icons > img {width: 40px; height: 40px; float: left; margin: 5px 12px; background-color: aquamarine;}
+
+        nav {width: 1200px; height: 60px; margin: 7px auto; background-color: gold;}
+        nav > ul > li {font-size: 15px; float: left; margin: 10px 23px;}
+        nav > ul > li > a {text-decoration: none; color: #000;}
+        nav > ul > li > a:hover{opacity: 0.5;}
+
+        #slider {width: 100%; height: 550px; background-color: blue;}
+        #slider >img {width: 100%; height: 100%;}
+
+        section {width: 1300px; height: 3500px; padding-top: 100px; background-color: aqua;}
+
+        #best {
+            width: 1300px; height: 1000px; margin: 0 auto; display: flex; flex-direction: row; 
+            flex-wrap: wrap; justify-content: center; align-items: center; padding-top: 30px;
+            background-color: tomato;
+        }
+        #best > h3 {font-size: 20px; line-height: 20px; flex-basis: 100%; text-align: center;}
+        #best > p {font-size: 16px; line-height: 20px; text-align: center; color: #666;}
+        #best > ul {
+            width: 100%; height: 40px; display: flex; flex-direction: row; 
+            justify-content: center; align-content: center; line-height: 20px;
+        }
+        #best > ul > li {font-size: 15px; text-align: center; margin: 10px; color: #000;}
+
+        .Bbox {width: 280px; height: 380px;  background-color: greenyellow;}
+        .Bbox > img {width: 260px; height: 260px; margin: 5px 10px;}
+        .Bbox > h4 {width: 260px; font-size: 13px; float: left; margin: 10px 10px;}
+        .Bbox > h5 {width: 260px; font-size: 12px; float: left; margin: 0 10px 10px;}
+        .Bbox > span {width: 260px; font-size: 13px; float: left; margin: 0 10px;}
+
+        #online {width: 1300px; height: 500px; margin: 100px 0; display: flex; flex-direction: row; 
+            flex-wrap: wrap; justify-content: center; align-items: center;
+            background-color: gold;
+        }
+        #online > h3 {font-size: 20px; line-height: 20px; flex-basis: 100%; text-align: center;}
+        #online > p {font-size: 16px; line-height: 20px; flex-basis: 100%; text-align: center; color: #666;}
+
+        .Obox {width: 250px; height: 350px; background-color: tomato;}
+        .Obox > img {width: 230px; height: 230px; margin: 10px 10px 0;}
+        .Obox > h4 {width: 250px; font-size: 13px; float: left; margin: 10px 10px;}
+        .Obox > h5 {width: 250px; font-size: 12px; float: left; margin: 0 10px 10px;}
+        .Obox > span {width: 250px; font-size: 13px; float: left; margin: 0 10px;}
+
+        #new {width: 1300px; height: 1000px; margin: 100px 0; display: flex; flex-direction: row; 
+            flex-wrap: wrap; justify-content: center; align-items: center;
+            background-color: cornflowerblue;
+        }
+        #new > h3 {font-size: 20px; line-height: 20px; flex-basis: 100%; text-align: center;}
+        #new > p {font-size: 16px; line-height: 20px; flex-basis: 100%; text-align: center; color: #666;}
+        
+        .Nbox {width: 300px; height: 380px;  background-color: greenyellow;}
+        .Nbox > img{width: 280px; height: 260px; margin: 5px 10px;} 
+        .Nbox > h4 {width: 250px; font-size: 13px; float: left; margin: 10px 10px;}
+        .Nbox > span {width: 250px; font-size: 13px; float: left; margin: 0 10px;}
+
+        #event {
+            width: 100%; height: 380px; margin: 200px 0 90px; display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; background-color: rgb(235, 235, 235); gap: 6px;
+        }
+        #event > h3 {font-size: 25px; line-height: 30px; margin: 0; text-align: center;}
+        #event > p {font-size: 15px; line-height: 25px; margin: 0; text-align: center;}
+
+        footer {width: 100%; height: 500px; background-color: rgb(235, 235, 235);}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="wish">
+            <ul>
+                <li><a href="#">관심상품 0개</a></li>
+                <li><a href="#">좋아요 0개</a></li>
+            </ul>
+        </div>
+        <div id="login">
+            <ul>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">주문조회</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">최근본상품</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+        <div id="logo"><img src="https://hyejin06.github.io/20250123/img/logo1.jpg" alt="logo"></div>
+        <div id="icons">
+            <img src="https://hyejin06.github.io/20250123/img/icon1.webp" alt="icon1"><a href="#"></a>
+            <img src="https://hyejin06.github.io/20250123/img/icon2.webp" alt="icon2"><a href="#"></a>
+            <img src="https://hyejin06.github.io/20250123/img/icon3.webp" alt="icon3"><a href="#"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">전체상품</a></li>
+                <li><a href="#">BEST</a></li>
+                <li><a href="#">크리스마스 소품</a></li>
+                <li><a href="#">전통소품</a></li>
+                <li><a href="#">모형, 촬영소품</a></li>
+                <li><a href="#">빈티지 엔틱 소품</a></li>
+                <li><a href="#">계절별 인테리어 소품</a></li>
+                <li><a href="#">정원, 테라스</a></li>
+                <li><a href="#">조화, 화병</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="slider"><img src="https://hyejin06.github.io/20250123/img/slider1.jpg" alt="slider"></div>
+    <section>
+        <div id="best">
+            <h3>BEST! SELLER</h3>
+            <p>베스트 셀러를 만나보세요</p>
+            <ul>
+                <li>베스트셀러</li>
+                <li>새로운 카테고리</li>
+                <li>새로운 카테고리</li>
+                <li>새로운 카테고리</li>
+            </ul>
+            <div class="Bbox">
+                <img src="https://hyejin06.github.io/20250123/img/img1.jpg" alt="Bimage1">
+                <h4>모조 고기 육류 모형 삼겹살 스테이크 목살 돼지고기 소고기 닭고기</h4>
+                <h5>신선한 고기모형을 그대로 제작</h5>
+                <span>3,000원</span>
+            </div>
+            <div class="Bbox">
+                <img src="https://hyejin06.github.io/20250123/img/img2.jpg" alt="Bimage2">
+                <h4>디저트 모형 과일 케이크 컵케이크 마카롱 슈크림 수플레 타르트</h4>
+                <h5>달콤한 디저트 모형을 그대로 생생하게</h5>
+                <span>8,000원</span>
+            </div>
+            <div class="Bbox">
+                <img src="https://hyejin06.github.io/20250123/img/img3.jpg" alt="Bimage3">
+                <h4>빵 모형 디저트 빵집 베이커리 인테리어 소품</h4>
+                <h5>향긋한 냄새를 풍기는 빵모형 시리즈</h5>
+                <span>2,500원</span>
+            </div>
+            <div class="Bbox">
+                <img src="https://hyejin06.github.io/20250123/img/img4.jpg" alt="Bimage4">
+                <h4>과일 모형 모음 가짜 모조 장식 주방 인테리어 소품 사과 딸기 배 수박 참외 귤 레몬 포도 망고 감 바나나</h4>
+                <h5>세상 모든 과일 모형을 한번에</h5>
+                <span>1,000원</span>
+            </div>
+            <div class="Bbox">
+                <img src="https://hyejin06.github.io/20250123/img/img5.jpg" alt="Bimage5">
+                <h4>딸기 스펀지 케이크 모형 레드 핑크 디저트 빵 촬영 소품</h4>
+                <h5></h5>
+                <span>11,900원</span>
+            </div>
+            <div class="Bbox">
+                <img src="https://hyejin06.github.io/20250123/img/img6.jpg" alt="Bimage6">
+                <h4>사각 미니 과일 케이크 모형</h4>
+                <h5></h5>
+                <span>5,900원</span>
+            </div>
+            <div class="Bbox">
+                <img src="https://hyejin06.github.io/20250123/img/img7.jpg" alt="Bimage7">
+                <h4>가든 오목입구 양동이</h4>
+                <h5></h5>
+                <span>8,000원</span>
+            </div>
+            <div class="Bbox">
+                <img src="https://hyejin06.github.io/20250123/img/img8.jpg" alt="Bimage8">
+                <h4>화이트 가든 양동이</h4>
+                <h5></h5>
+                <span>46,000원</span>
+            </div>
+        </div>
+        <div id="online">
+            <h3>ONLY! ON</h3>
+            <p>오직 온라인에서만 만나보세요</p>
+            <div class="Obox">
+                <img src="https://hyejin06.github.io/20250123/img/img9.jpg" alt="Oimage1">
+                <h4>원형 개다리 소반</h4>
+                <h5></h5>
+                <span>21,500원</span>
+            </div>
+            <div class="Obox">
+                <img src="https://hyejin06.github.io/20250123/img/img10.jpg" alt="Oimage2">
+                <h4>팔각 창살 한옥문</h4>
+                <h5></h5>
+                <span>26,000원</span>
+            </div>
+            <div class="Obox">
+                <img src="https://hyejin06.github.io/20250123/img/img11.jpg" alt="Oimage3">
+                <h4>소형 한옥문</h4>
+                <h5></h5>
+                <span>6,000원</span>
+            </div>
+            <div class="Obox">
+                <img src="https://hyejin06.github.io/20250123/img/img12.jpg" alt="Oimage4">
+                <h4>전통 한옥 창문 창살 문살 <br>
+                    창호지문 6가지 사이즈 모음전</h4>
+                <h5>대한민국 전통 한옥스타일로 제작된 창호문</h5>
+                <span>12,000원</span>
+            </div>
+            <div class="Obox">
+                <img src="https://hyejin06.github.io/20250123/img/img13.jpg" alt="Oimage5">
+                <h4>전통 팔각 창문 문창살 창호지문<br>
+                     한옥문 벽장식</h4>
+                <h5></h5>
+                <span>11,900원</span>
+            </div>
+        </div>
+        <div id="new">
+            <h3>NEW! ARRIVALS</h3>
+            <p>언제나 새로운 신상품</p>
+            <div class="Nbox">
+                <img src="https://hyejin06.github.io/20250123/img/img14.jpg" alt="Nimage1">
+                <h4>부활절 병아리, 닭 소품</h4>
+                <span>3,000원</span>
+            </div>
+            <div class="Nbox">
+                <img src="https://hyejin06.github.io/20250123/img/img15.jpg" alt="Nimage2">
+                <h4>부활절 달걀 모형</h4>
+                <span>3,000원</span>
+            </div>
+            <div class="Nbox">
+                <img src="https://hyejin06.github.io/20250123/img/img16.jpg" alt="Nimage3">
+                <h4>통나무 원목 화단 울타리 펜스 휀스 정원 텃밭<br>
+                     꽃밭 인테리어 꾸미기</h4>
+                <span>12,900원</span>
+            </div>
+            <div class="Nbox">
+                <img src="https://hyejin06.github.io/20250123/img/img17.jpg" alt="Nimage4">
+                <h4>복을 쓸어담는 빗자루 모형</h4>
+                <span>2,200원</span>
+            </div>
+            <div class="Nbox">
+                <img src="https://hyejin06.github.io/20250123/img/img18.jpg" alt="Nimage5">
+                <h4>닭 수탉 시골장닭</h4>
+                <span>24,000원</span>
+            </div>
+            <div class="Nbox">
+                <img src="https://hyejin06.github.io/20250123/img/img19.jpg" alt="Nimage6">
+                <h4>미니옹기 항아리 장독대</h4>
+                <span>4,000원</span>
+            </div>
+            <div class="Nbox">
+                <img src="https://hyejin06.github.io/20250123/img/img20.jpg" alt="Nimage7">
+                <h4>전통 대나무 소쿠리 바구니 채반 원형 과일</h4>
+                <span>4,000원</span>
+            </div>
+            <div class="Nbox">
+                <img src="https://hyejin06.github.io/20250123/img/img21.jpg" alt="Nimage8">
+                <h4>풍수 전통 소품 액막이 명태</h4>
+                <span>9,000원</span>
+            </div>
+        </div>
+        <div id="event">
+            <h3>WHAT WESELL HOT EVENT</h3>
+            <p>what wesell 에서 지금 진행중인<br>
+                특별 이벤트를 만나보세요.</p>
+            <span><a href="#">자세히 보기</a></span>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
