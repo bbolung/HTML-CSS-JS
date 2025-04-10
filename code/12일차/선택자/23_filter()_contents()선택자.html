@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function(){
+            //<li>요소 중 "선택자(태그, id, class)", 변수, 함수 선택
+            $("li").filter(".st1").css("background-color", "yellow");
+            //<li>요소의 내부 직계 자식 노드 모두 가져와 스타일 적용(.children()과 달리 텍스트도 포함)
+            $("li").contents().css("border", "1px solid red");
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul>
+        <li class="st1">내용1</li>
+        <li>
+            <span><strong>내용2</strong></span>
+        </li>
+        <li class="st1">내용3</li>
+    </ul>
+</body>
+</html>

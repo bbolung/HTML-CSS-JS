@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        //콘솔창에서 출력해조세요.
+        var arrName = ["갑", "을", "병", "정"];
+
+        $(function(){
+            var arr = arrName.map(function(v,i){
+                console.log(v,i);
+                return v+i;
+            });
+
+            console.log(arr);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

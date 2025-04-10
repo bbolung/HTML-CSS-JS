@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function(){
+            //<li>요소 중 인덱스 3에 참조하는 요소 선택
+            $("li:eq(3)").css("background-color", "yellow")
+            //<li>요소 중 인덱스 3보다 작은 인덱스 참조하는 요소 모두 선택
+            $("li:lt(3)").css("background-color", "pink")
+            //<li>요소 중 인덱스3보다 큰 인덱스 참조하는 요소 모두 선택
+            $("li:gt(3)").css("background-color", "aqua");
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul>
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+        <li>내용5</li>
+        <li>내용6</li>
+    </ul>
+</body>
+</html>

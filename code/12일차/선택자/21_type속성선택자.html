@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function(){
+            //<input>요소 type="text"인 요소만 선택
+            $(":text").css("border", "1px dashed #f00");
+            //checked 속성인(checkbox, radio) 요소만 선택, false : 선택해제
+            $(":checked").attr("checked", false);
+            //selected 속성인(select안의 option요소) 요소만 선택
+            $(":selected").attr("selected", false);
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <p>
+        <label for="user_name">이름</label>
+        <input type="text" name="user_name" id="user_name">
+    </p>
+    <p>
+        <input type="checkbox" name="accept" id="accept">
+        <label for="accept">사용자 동의</label>
+    </p>
+    <p>
+        <select name="rel_site" id="rel_site">
+            <option value="네이버">네이버</option>
+            <option value="네이트">네이트</option>
+        </select>
+    </p>
+</body>
+</html>
