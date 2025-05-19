@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{list-style: none; margin: 0; padding: 0;}
+
+.panel-body{
+    margin: 24px auto; padding: 20px; width: 1200px; height: 500px;
+}
+
+.form-group{
+    display: flex; flex-direction: row; justify-content: center;
+    align-items: flex-start; gap: 30px;
+}
+
+img{border: 1px solid #000; margin-top: 10px;}
+
+.info-table{
+    width: 60%; height: 80%; margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td{padding: 8px 0; text-align: center; border-bottom: 1px solid #ddd;}
+
+.form-control{width: 100%;}
+
+input[readonly], textarea[readonly] {background-color: #eee;}
+
+input, textarea{border: 1px solid #ddd;}
+
+.button{float: right; margin: 5px 50px;}
+
+.btn-outline {
+  color: inherit;
+  background-color: transparent;
+  transition: all .5s;
+}
+
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
+
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: white;
+}
+
+.row{
+    margin: 24px auto; padding: 20px; width: 1200px;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-body {
+  padding: 15px;
+}
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.chat {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chat li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #999999;
+}
+
+.chat li.left .chat-body {
+  margin-left: 60px;
+}
+
+.chat li.right .chat-body {
+  margin-right: 60px;
+}
+
+.chat li .chat-body p {
+  margin: 0;
+}
+
+.chat li .chat-body p {
+  margin: 0;
+}
+.chat li::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.chat .glyphicon {
+  margin-right: 5px;
+}
+.chat-reply .reply-body {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.chat .glyphicon,
+.panel .slidedown .glyphicon {
+  margin-right: 5px;
+}
