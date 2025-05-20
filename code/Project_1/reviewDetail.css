@@ -14,7 +14,7 @@ ul,ol,li{list-style: none; margin: 0; padding: 0;}
     align-items: flex-start; gap: 30px;
 }
 
-img{border: 1px solid #000; margin-top: 10px;}
+img{border: 1px solid #000; width: 500px; height: 500px; margin-top: 20px;}
 
 .info-table{
     width: 60%; height: 80%; margin-top: 10px;
@@ -29,7 +29,7 @@ input[readonly], textarea[readonly] {background-color: #eee;}
 
 input, textarea{border: 1px solid #ddd;}
 
-.button{float: right; margin: 5px 50px;}
+.button{float: right; margin: 10px 50px;}
 
 .btn-outline {
   color: inherit;

@@ -1,0 +1,169 @@
+
+@media (max-width: 768px) {
+    .reivewDetail-header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .reivewDetail-img,
+    .info-table {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.contents{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.reivewDetail-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 0 50px;
+
+    margin-left: auto;
+    width: fit-content;
+}
+
+.reivewDetail-img .img-wrap {
+    max-width: 500px;
+}
+
+.imgUrl {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.info-table {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info-table {
+    width: 800px;
+    max-width: 100%;    /* 화면이 작으면 최대 100%까지만 줄어듦 */
+    min-width: 600px; 
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.info-table th {
+    background-color: #f2f2f2;
+    width: 120px;
+    color: #333;
+    text-align: center;
+}
+
+.btn-wrap {
+    margin-top: 210px;     /* 표와의 거리 */
+    margin-bottom: 0;     /* performanceDetail-info 아래쪽에 딱 붙도록 */
+    text-align: center;   /* 중앙 정렬 */
+}
+
+.button{float: right; margin: 10px 50px;}
+
+.btn-outline {
+  color: inherit;
+  background-color: transparent;
+  transition: all .5s;
+}
+
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
+
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: white;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 1200px){
+    .col-lg-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100%;
+        float: left;
+    }
+}
+
+.chat {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chat li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #999999;
+}
+
+.chat li.left .chat-body {
+  margin-left: 60px;
+}
+
+.chat li.right .chat-body {
+  margin-right: 60px;
+}
+
+.chat li .chat-body p {
+  margin: 0;
+}
+
+.chat li .chat-body p {
+  margin: 0;
+}
+.chat li::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.chat .glyphicon {
+  margin-right: 5px;
+}
+.chat-reply .reply-body {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.chat .glyphicon,
+.panel .slidedown .glyphicon {
+  margin-right: 5px;
+}
